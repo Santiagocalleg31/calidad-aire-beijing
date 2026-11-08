@@ -1,7 +1,7 @@
 [project]
 name = "proyecto-1-esp-data"
 version = "0.1.0"
-description = "Add your description here"
+description = "Predicción de días con mala calidad del aire en Beijing"
 readme = "README.md"
 authors = [
     { name = "Valentina", email = "valentinarestrepoarboleda@gmail.com" }
@@ -12,7 +12,6 @@ dependencies = [
     "lightgbm>=4.7.0",
     "numpy>=2.5.4",
     "pandas>=3.1.0",
-    "pydataxm>=0.3.17",
     "pytest>=9.2.0",
     "requests>=2.34.2",
     "scikit-learn>=1.9.1",
@@ -31,9 +30,6 @@ dev = [
     "pytest>=9.2.0",
     "ruff>=0.17.3",
 ]
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/taller"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
